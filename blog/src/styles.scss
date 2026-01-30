@@ -1,0 +1,37 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #212529;
+  --card-bg: #ffffff;
+  --border-color: #dee2e6;
+  --muted-color: #6c757d;
+}
+
+body.dark-mode {
+  --bg-color: #1a1a2e;
+  --text-color: #e0e0e0;
+  --card-bg: #16213e;
+  --border-color: #2a3b55;
+  --muted-color: #a0a0a0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
+  
+  .card-footer {
+    border-top-color: var(--border-color);
+    background-color: rgba(0,0,0, 0.03);
+  }
+}
+
+body.dark-mode a {
+  color: #6ea8fe;
+}

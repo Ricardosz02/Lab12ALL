@@ -1,0 +1,12 @@
+<div class="mt-3 border-top pt-2">
+  <h6>Komentarze:</h6>
+  
+  <div *ngFor="let c of commentsList" class="p-2 mb-1 bg-light rounded">
+    <small>{{ c }}</small>
+  </div>
+
+  <div class="input-group mt-2">
+    <input type="text" class="form-control form-control-sm" [(ngModel)]="newComment" placeholder="Napisz komentarz...">
+    <button class="btn btn-sm btn-outline-primary" (click)="add()">Wyślij</button>
+  </div>
+</div>

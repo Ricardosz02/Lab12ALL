@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/']">Blog App</a>
+
+    <div class="collapse navbar-collapse" id="navbarContent" style="display: flex!important;">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/']">Home</a>
+        </li>
+        @if (authService.isLoggedIn()) {
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/blog']">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/add-post']">Dodaj Post</a>
+          </li>
+        }
+      </ul>
+      <div class="d-flex gap-2 ms-auto">
+        @if (!authService.isLoggedIn()) {
+          <a class="btn btn-outline-primary" [routerLink]="['/login']">Login</a>
+          <a class="btn btn-primary" [routerLink]="['/signup']">Rejestracja</a>
+        } @else {
+          <button class="btn btn-outline-secondary" (click)="signOut()">Wyloguj</button>
+        }
+      </div>
+    </div>
+  </div>
+</nav>
