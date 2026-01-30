@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+npm-debug.log*
+
+# Angular build
+blog/dist/
+blog/.angular/
+blog/.vscode/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# MongoDB data
+data/
