@@ -1,4 +1,4 @@
-# Blog Application - Lab12
+# Lab12ALL
 
 Aplikacja blogowa z paginacją, walidacją formularzy i systemem polubień.
 
@@ -45,12 +45,3 @@ Aplikacja dostępna pod: **http://localhost:4200**
 2. **Walidacja formularzy** - Reactive Forms we wszystkich formularzach (signup, login, add-post)
 3. **System polubień** - like/unlike z persystencją w bazie danych
 4. **Licznik wyświetleń** - automatyczne zliczanie otwarć posta
-
-## Dodatkowe funkcje
-
-- System komentarzy
-- Ulubione posty
-- Filtrowanie/wyszukiwanie
-- System ocen (rating)
-- Autentykacja użytkowników
-- Dark mode
